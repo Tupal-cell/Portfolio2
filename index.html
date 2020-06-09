@@ -13,7 +13,7 @@
     
     
     <body data-spy="scroll" data-target=".navbar" data-offset="60">
-        <header id="nav" class="noBackground">
+        <header id="nav">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -29,6 +29,7 @@
                         <li><a href="#experience">Expérience</a></li>
                         <li><a href="#expe">Education & Compétences</a></li>
                         <li><a href="#portfolio">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -112,7 +113,7 @@
                 
         <section class="education skills parallax2" id="expe">
             <div class="container">
-                 <div class="red-divider"></div>
+                 <div class="white-divider"></div>
                 <div class="heading">
                     <h2>Education</h2>
                 </div>
@@ -140,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="red-divider" style="margin-top: 20px;"></div>
+            <div class="white-divider" style="margin-top: 20px;"></div>
             <div class="heading">
                 <h2>Compétences</h2>
             </div>
@@ -226,39 +227,88 @@
                 </div>
             </div>
         </section>
-     
-        <section id="recommandations">
-            <div class="container">
-                <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                         <li data-target="#myCarousel" data-slide-to="1"></li>
-                         <li data-target="#myCarousel" data-slide-to="2"></li>  
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <h3>"The impossible exists only until we find a way to make it possible"</h3>
-                            <h4>Mike Horn</h4>       
-                        </div>
-                          <div class="item">
-                            <h3>"Don't try to be like Jackie. There is only one Jackie. Study computers instead."</h3>
-                            <h4>Jackie Chan</h4>       
-                        </div>
-                          <div class="item">
-                            <h3>“If you stop at general math, you’re only going to make general math money.”</h3>
-                            <h4>Snoop Dogg</h4>       
-                        </div>
-                    </div>
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
+    
+        <section id="contact">
+        <div class="container">
+            <div class="red-divider"></div>
+            <div class="heading">
+                <h2>Contactez-moi</h2>
             </div>
-        </section>
-        
+
+           <div class="row">
+               <div class="col-lg-10 col-lg-offset-1">
+                    <form id="contact-form" method="post" action="" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname">Prénom <span class="blue">*</span></label>
+                                <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name">Nom <span class="blue">*</span></label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Email <span class="blue">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone">Téléphone</label>
+                                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message <span class="blue">*</span></label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="red"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="button2" value="Envoyer">
+                            </div>    
+                        </div>
+                    </form>
+                </div>
+           </div>
+        </div>
+    </section> 
+
+    <section id="recommandations">
+        <div class="container">
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>  
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h3>"The impossible exists only until we find a way to make it possible"</h3>
+                        <h4>Mike Horn</h4>       
+                    </div>
+                      <div class="item">
+                        <h3>"Don't try to be like Jackie. There is only one Jackie. Study computers instead."</h3>
+                        <h4>Jackie Chan</h4>       
+                    </div>
+                      <div class="item">
+                        <h3>“If you stop at general math, you’re only going to make general math money.”</h3>
+                        <h4>Snoop Dogg</h4>       
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    </body>
         <footer class="text-center">
             <a href="#about">
                 <span class="glyphicon glyphicon-chevron-up"></span>
