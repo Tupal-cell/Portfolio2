@@ -1,6 +1,6 @@
 <?php
 
-    $array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false);
+    $array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false); //variable array qui prend tout les parametres
     $emailTo = "chris.quev@gmail.com";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
@@ -72,20 +72,22 @@
         echo json_encode($array);
         
     }
+    
+   
 
     function isEmail($email) 
     {
-        return filter_var($email, FILTER_VALIDATE_EMAIL);
+        return filter_var($email, FILTER_VALIDATE_EMAIL); 
     }
     function isPhone($phone) 
     {
-        return preg_match("/^[0-9 ]*$/",$phone);
+        return preg_match("/^[0-9 ]*$/",$phone); 
     }
     function test_input($data) 
     {
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
+      $data = trim($data); 
+      $data = stripslashes($data); 
+      $data = htmlspecialchars($data); 
       return $data;
     }
  
